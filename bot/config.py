@@ -13,7 +13,7 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "7315918217:AAEruBuLCbk53tR3_ONdBOgYkG85s_tS5xc"
+    bot_token = "7315918217:AAGbCBbTQme066rHebFQUgfBBw3dO_GIklk"
 
     #DEVS or #OWNERS
     sudo_users = [1596559467, 7172796863]
@@ -26,7 +26,7 @@ class TG_CONFIG:
 
 
 class UPLOAD_CONGIF:
-    upload_to = "gdrive" #tg, ftp, gdrive
+    upload_to = "tg" #tg, ftp, gdrive
     default_upload_to = "tg"
 
 
