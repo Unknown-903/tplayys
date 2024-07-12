@@ -13,10 +13,10 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "7315918217:AAGbCBbTQme066rHebFQUgfBBw3dO_GIklk"
+    bot_token = "7315918217:AAG_xE1MFCH0X2rZEvk9QrT1j-1vla83k0M"
 
     #DEVS or #OWNERS
-    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025]
+    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595]
 
     session = "Maheshassistantbot"
 
