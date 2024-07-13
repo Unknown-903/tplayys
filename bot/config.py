@@ -16,7 +16,7 @@ class TG_CONFIG:
     bot_token = "7315918217:AAHaWCR7ENN5BCd5s2A71FExIo0JM6M_RrU"
 
     #DEVS or #OWNERS
-    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595]
+    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025]
 
     session = "Maheshassistantbot"
 
