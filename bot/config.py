@@ -13,14 +13,13 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "7315918217:AAGY9RMvkagHoCQecI4otEk7Ph6GOfRJnkM"
+    bot_token = "6574208132:AAFGCwyKirlLjS3WbjUmX-_SyOn0BUUbHnk"
 
     #DEVS or #OWNERS
-    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5738179760, 5518437348, 7011929837, 2036297424]
+    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579]
+    session = "MinatoXRobot"
 
-    session = "Maheshassistantbot"
-
-    bot_creater = "MK"  # Don't Remove if you Respect the DEV
+    bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
 
     bot_creater_id = "@maheshsirop"  # Don't Remove if you Respect the DEV
 
