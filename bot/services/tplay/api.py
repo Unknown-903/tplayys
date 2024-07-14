@@ -37,10 +37,13 @@ class TPLAY_API():
 
 
     def get_hmac(self):
-        response = requests.get(self.HMAC_v2)
-        matches = re.findall(r'\?hdnea=exp=[^"]+', response.text)
-        return matches[0].replace("?", "").strip()
-
+        response = requests.get(self.HMAC)
+        response.raise_for_status()
+        data = response.json()
+        hdnea = data['data']['hmac']['hdnea']['value']
+        res = hdnea.split('exp=', 1)[1]
+        return res
+    
     def get_data(self):
       
 
