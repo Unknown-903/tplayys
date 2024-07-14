@@ -29,8 +29,8 @@ sudo docker run tata
 # Commands
 
 ```
-/start - To Check Bot Alive or Not
-/webdl - To Rip Tata Play 7 Days Past
+start - To Check Bot Alive or Not
+webdl - To Rip Tata Play 7 Days Past
 ```
 
 # Webdl Command Examples
