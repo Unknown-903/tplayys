@@ -82,10 +82,10 @@ async def gdrive_helper(_, message):
 def webdl_cmd_handler(app, message):
     if len(message.text.split(" ")) <= 2:
         message.reply_text(
-            "<b>Syntax: </b>`/webdl -c [CHANNEL SLUG] [OTHER ARGUMENTS]`")
+            "<b>Syntax: </b>`/webdl1 -c [CHANNEL SLUG] [OTHER ARGUMENTS]`")
         return
     
-    command = message.text.replace("/webdl", "").strip()
+    command = message.text.replace("/webdl1", "").strip()
     if "-c" in command:
         from bot.services.tplay.main import TPLAY
         downloader = TPLAY(command, app, message)
