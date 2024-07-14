@@ -13,11 +13,11 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "6574208132:AAFGCwyKirlLjS3WbjUmX-_SyOn0BUUbHnk"
+    bot_token = "7315918217:AAG0ZidjPxmE01ORe8PjRomdk_B9Hv54Bf4"
 
     #DEVS or #OWNERS
     sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579]
-    session = "MinatoXRobot"
+    session = "Maheshassistantbot"
 
     bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
 
