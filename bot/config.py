@@ -16,7 +16,7 @@ class TG_CONFIG:
     bot_token = "7315918217:AAEq1XyRmSjAxs7FGCTKd1AUQAARmm9ZGVg"
 
     #DEVS or #OWNERS
-    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579]
+    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5518437348]
     session = "maheshassistantbot"
 
     bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
