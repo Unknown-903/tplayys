@@ -1,4 +1,4 @@
-# Rv's Paid Tata Play Bot
+# MK's Paid Tata Play Bot
 
 • Auto Fetch Channel Keys
 
@@ -17,7 +17,10 @@ https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 ```
 # Vps Commands
 ```
-pip3 -r requirements.txt
+git clone forked-repo-url MAHESH
+```
+```
+cd MAHESH
 ```
 ```
 sudo docker build . -t tata
@@ -36,5 +39,5 @@ webdl - To Rip Tata Play 7 Days Past
 # Webdl Command Examples
 
 ```
-/webdl -c Disney -ss 06/07/2024+00:00:00 -to 06/07/2024+00:01:00 -title Doraemon
+/webdl -c Disney -ss 16/07/2024+00:00:00 -to 16/07/2024+00:01:00 -title Doraemon
 ```
