@@ -13,7 +13,7 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "7315918217:AAEq1XyRmSjAxs7FGCTKd1AUQAARmm9ZGVg"
+    bot_token = "6955944141:AAFXk8wySsLWrBDfxsRNxrsDjl4CupDW6_w"
 
     #DEVS or #OWNERS
     sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5518437348]
@@ -82,7 +82,7 @@ class FILENAME_CONFIG:
     language_order = ['hi', 'ta', 'te', 'bn', 'gu', 'pa', 'as', 'or',
                     'ml', 'mr', 'kn', 'th', 'ja', 'th', 'id', 'ms', 'ko', 'bho', 'bh', 'en']
 
-    default_group_tag = "RV" # Don't change it if you Respect the DEV
+    default_group_tag = "SNEHITHA" # Don't change it if you Respect the DEV
 
     #Dict made to add Group Tag according to the user requesting to DL (according to there TG ID) if not in list then takes the default_group_tag
     group_tag_mapping = {
