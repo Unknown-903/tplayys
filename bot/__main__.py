@@ -1,4 +1,5 @@
 import os
+import sys
 from pyrogram import filters, idle, Client
 from bot.config import TG_CONFIG
 from bot.config import token_file, client_secrets_json
@@ -91,7 +92,14 @@ def webdl_cmd_handler(app, message):
         downloader = TPLAY(command, app, message)
         downloader.start_process()
 
-
+@app.on_message(filters.command(["restart"]) & filters.private)
+async def reset(bot, update):
+    cmd = update
+    try:
+        await update.reply_text("Restarting bot!")
+    except Exception as er:
+        pass
+    os.execl(sys.executable, sys.executable, "-m", "bot")
 
 @app.on_message(filters.incoming & filters.command(['start']) & filters.text)
 def start_cmd_handler(app, message):
