@@ -34,7 +34,7 @@ class Processor():
         self.end_code = str(time.time()).replace(".", "")
 
         
-        self.msg = self.message.reply_text(f'''Processing...''')
+        self.msg = self.message.reply_text(f'''Opening tata play to download and send you''')
 
         result, self.final_file_name = MPD(
             link, init_file_name, ott, self.custom_group_tag, parse_subs=parse_subs).refine(video_resolution=self.video_resolution, video_quality=self.video_quality, audio_codec=self.audio_codec, audio_quality=self.audio_quality, audio_languages=None, fallback_language=self.fallback_language)
@@ -101,7 +101,7 @@ class Processor():
             threads.append(thread)
             thread.start()
             print(
-                f"[+] Downloading Audio Stream {i + 1} of {len(self.audio_data)}")
+                f"[👉👈] Downloading Audio Stream {i + 1} of {len(self.audio_data)}")
 
         try:
             video_format = self.video_data["id"]
@@ -135,7 +135,7 @@ class Processor():
                 f"{aria2c}",
             ])
 
-            print("[+] Downloading Video Stream")
+            print("[👉👈] Downloading Video Stream")
             subprocess.call(video_cmd)
         except Exception as e:
             self.msg.edit(f"Error Downloading Video File {e}")
@@ -237,8 +237,8 @@ class Processor():
                     dl_folder, f"subtitle_{subs_lang}_{self.end_code}.vtt")
 
 
-                print(f"[+] Downloading Subtitle - {subs_lang}")
-                print(f"[+] URL - {subs_url}")
+                print(f"[👉👈] Downloading Subtitle - {subs_lang}")
+                print(f"[👉👈] URL - {subs_url}")
 
                 request_headers = {
                     'user-agent' : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
@@ -270,8 +270,8 @@ class Processor():
                     "--external-downloader",
                     f"{aria2c}"
                 ]
-                print(f"[+] Downloading Subtitle - {sub['lang']}")
-                print(f"[+] URL - {subs_url}")
+                print(f"[👉👈] Downloading Subtitle - {sub['lang']}")
+                print(f"[👉👈] URL - {subs_url}")
                 subprocess.call(subs_dl_cmd)
 
     def mux_video(self, startTime=None, endTime=None):
@@ -366,14 +366,13 @@ class Processor():
     def start_process(self, startTime=None, endTime=None):
         task_start_time = time.time()
         self.msg.edit(
-            '<code>[+]</code> <b>Downloading</b>\n<code>{}</code>'.format(self.final_file_name))
+            '<code>[👉👈]</code> <b>Mahesh Babe 😘, I am Downloading</b>\n<code>{}</code>'.format(self.final_file_name))
         
         self.dl_subs_v2()
         self.mpd_download()
 
 
-        self.msg.edit('<code>[+]</code> <b>Decrypting</b>\n<code>{}</code>\n\n<code>[+]</code> <b>Using Keys\n<code>{}</code></b>'.format(
-            self.final_file_name, "\n".join(self.key) if isinstance(self.key, list) else self.key))
+        self.msg.edit('<code>[👉👈]</code> <b>Mahesh Babe 😘, I am Decrypting</b>\n<code>{}</code>')
 
 
         if self.key is not None:
@@ -381,14 +380,14 @@ class Processor():
 
 
         self.msg.edit(
-            '<code>[+]</code> <b>Muxing</b>\n<code>{}</code>'.format(self.final_file_name))
+            '<code>[👉👈]</code> <b>Mahesh Babe 😘, I am Mixing the files</b>\n<code>{}</code>'.format(self.final_file_name))
 
         out_file_name = self.mux_video(startTime, endTime)
 
         
 
         self.msg.edit(
-            '<code>[+]</code> <b>Uploading</b>\n<code>{}</code>'.format(self.final_file_name))
+            '<code>[👉👈]</code> <b>Mahesh Babe 😘, I am Uploading</b>\n<code>{}</code>'.format(self.final_file_name))
         
         upload_path = "BOT Uploads/{}/{}".format(self.ott, self.path)
 
