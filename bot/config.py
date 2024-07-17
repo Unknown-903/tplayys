@@ -13,11 +13,11 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "6955944141:AAFXk8wySsLWrBDfxsRNxrsDjl4CupDW6_w"
+    bot_token = "6888727952:AAGXnzT_o3zvCxLKEtxwgyUxdGdZ7Gp5OEc"
 
     #DEVS or #OWNERS
     sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5518437348]
-    session = "Mytataplay_bot"
+    session = "MAHESHGOFILEUPLOADERBOT"
 
     bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
 
