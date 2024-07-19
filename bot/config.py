@@ -13,11 +13,11 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = "6888727952:AAGXnzT_o3zvCxLKEtxwgyUxdGdZ7Gp5OEc"
+    bot_token = ""
 
     #DEVS or #OWNERS
     sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5518437348]
-    session = "MAHESHGOFILEUPLOADERBOT"
+    session = ""
 
     bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
 
@@ -86,8 +86,8 @@ class FILENAME_CONFIG:
 
     #Dict made to add Group Tag according to the user requesting to DL (according to there TG ID) if not in list then takes the default_group_tag
     group_tag_mapping = {
-        '7172796863': 'SG',
-        '1596559467' : 'MK'
+        '7172796863': 'SNEHITHA',
+        '1596559467': 'SNEHITHA'
     }
 
 
