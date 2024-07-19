@@ -79,27 +79,29 @@ async def gdrive_helper(_, message):
     else:
         await message.reply('<b>Invaild args!</b>\nCheck <code>/gdrive</code> for usage guide')
 
-@app.on_message(filters.chat(TG_CONFIG.sudo_users) & filters.incoming & filters.command(['webdl']) & filters.text)
+@app.on_message(filters.chat(TG_CONFIG.sudo_users) & filters.incoming & filters.command(['webdl1']) & filters.text)
 def webdl_cmd_handler(app, message):
     if len(message.text.split(" ")) <= 2:
         message.reply_text(
-            "<b>Syntax: </b>`/webdl -c [CHANNEL SLUG] [OTHER ARGUMENTS]`")
+            "<b>Syntax: </b>`/webdl1 -c [CHANNEL SLUG] [OTHER ARGUMENTS]`")
         return
     
-    command = message.text.replace("/webdl", "").strip()
+    command = message.text.replace("/webdl1", "").strip()
     if "-c" in command:
         from bot.services.tplay.main import TPLAY
         downloader = TPLAY(command, app, message)
         downloader.start_process()
 
-@app.on_message(filters.command(["restart"]) & filters.private)
-async def reset(bot, update):
-    cmd = update
-    try:
-        await update.reply_text("Restarting bot!")
-    except Exception as er:
-        pass
-    os.execl(sys.executable, sys.executable, "-m", "bot")
+@app.on_message(filters.command("trestart") & filters.private)
+def restart_command(client, message):
+    # Check if the message is from the owner
+    if message.from_user.id == TG_CONFIG.owner_id:
+        # Send a confirmation message to the owner
+        message.reply("Restarting me babe 😘")
+        # Restart the bot
+        os.execl(sys.executable, sys.executable, "-m", "bot")
+    else:
+        message.reply("You're not my babe 😘mahesh😘 to restart the me")
 
 @app.on_message(filters.incoming & filters.command(['start']) & filters.text)
 def start_cmd_handler(app, message):
