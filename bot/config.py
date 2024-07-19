@@ -13,11 +13,11 @@ class TG_CONFIG:
 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
 
-    bot_token = ""
+    bot_token = "6955944141:AAH_ydplt2mHNbBmvaf8qFBndfOPlLzLsmI"
 
     #DEVS or #OWNERS
     sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5518437348, 1996570767, 6651534688, 7011929837]
-    session = ""
+    session = "Mytataplay_bot"
 
     bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
 
