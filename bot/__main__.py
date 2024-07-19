@@ -79,20 +79,20 @@ async def gdrive_helper(_, message):
     else:
         await message.reply('<b>Invaild args!</b>\nCheck <code>/gdrive</code> for usage guide')
 
-@app.on_message(filters.chat(TG_CONFIG.sudo_users) & filters.incoming & filters.command(['webdl1']) & filters.text)
+@app.on_message(filters.chat(TG_CONFIG.sudo_users) & filters.incoming & filters.command(['webdl2']) & filters.text)
 def webdl_cmd_handler(app, message):
     if len(message.text.split(" ")) <= 2:
         message.reply_text(
-            "<b>Syntax: </b>`/webdl1 -c [CHANNEL SLUG] [OTHER ARGUMENTS]`")
+            "<b>Syntax: </b>`/webdl2 -c [CHANNEL SLUG] [OTHER ARGUMENTS]`")
         return
     
-    command = message.text.replace("/webdl1", "").strip()
+    command = message.text.replace("/webdl2", "").strip()
     if "-c" in command:
         from bot.services.tplay.main import TPLAY
         downloader = TPLAY(command, app, message)
         downloader.start_process()
 
-@app.on_message(filters.command("trestart") & filters.private)
+@app.on_message(filters.command("restart2") & filters.private)
 def restart_command(client, message):
     # Check if the message is from the owner
     if message.from_user.id == TG_CONFIG.owner_id:
