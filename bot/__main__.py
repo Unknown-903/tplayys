@@ -92,7 +92,7 @@ def webdl_cmd_handler(app, message):
         downloader = TPLAY(command, app, message)
         downloader.start_process()
 
-@app.on_message(filters.command("trestart") & filters.private)
+@app.on_message(filters.command("restart1") & filters.private)
 def restart_command(client, message):
     # Check if the message is from the owner
     if message.from_user.id == TG_CONFIG.owner_id:
