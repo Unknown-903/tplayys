@@ -43,7 +43,7 @@ class TPLAY_API():
         hdnea = data['data']['hmac']['hdnea']['value']
         res = hdnea.split('exp=', 1)[1]
         return res
-    
+
     def get_data(self):
       
 
