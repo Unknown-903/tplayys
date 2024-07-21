@@ -22,7 +22,7 @@ def within_12_hours(timestamp):
 
 class TPLAY_API():
     API_ALL_CHANNELS = "https://kong-tatasky.videoready.tv/content-detail/pub/api/v1/channels?limit=1000"
-    FETCHER = "https://tplayapi.code-crafters.app/321codecrafters/fetcher.json"
+    FETCHER = "https://toxicify-tpkeys.vercel.app/data/tplay.json"
     HMAC = "https://tplayapi.code-crafters.app/321codecrafters/hmac.json?random={}".format(random.randint(10,99))
     HMAC_v2 = "https://yuvraj43.xyz/test/ghjqw/manifest.mpd?id=587".format(random.randint(10,99))
 
