@@ -115,4 +115,20 @@ async def main():
     await app.stop()
 
 if __name__ == "__main__":
+
+    # with mergeApp:
+    #     bot:User = mergeApp.get_me()
+    #     bot_username = bot.username
+
+    try:
+        with USERBOT:
+            user = USERBOT.get_me()
+            TG_CONFIG.premium = user.is_premium
+        LOGGER.info("Bot boot successfully!")
+    except Exception as err:
+        LOGGER.error(f"{err}")
+        TG_CONFIG.premium = False
+        pass
+
+    
     app.loop.run_until_complete(main())
