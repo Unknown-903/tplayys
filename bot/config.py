@@ -10,23 +10,39 @@ dirName = os.path.basename(dirPath)
 
 class TG_CONFIG:
     api_id = 4857766
+    premium = False
+    session_name = "bhootkiduniya"  # Replace with your desired session name
 
+  #  session_string = ""  # Replace with your Telegram session string (optional)
+
+    log_file = "log.txt"  # 
     api_hash = "6c3c6facf5598a4b318e138f8c407028"
-
-    bot_token = "6678659572:AAEOfiHrQFpulD4Gx6m3bBhDKn14TeU0F1s"
-
+    stringhi = "BQD6zg0AukeO7M7L7IOKYW8upP8eb9GpQy8nS5DLCIbJLeN-UyJ4-dKQi6N0GCnX1EqWKJ6Tq0jdYw8pX-dQLQDLClo-iPhr9VErjsHzd3CCS011oZ-khmodjS9rYyqNxz4PgbsXaYyVPWO9hhGvHkIPOWXmWVnc0MwUaU6ZN4x0dGQrZvWtJqgis9WCVCgE4IetNy7oNBhxEsqLdrWD5XGYokZpt1Fuh7dBnKe6Ol4u4LKfGNcklAIqU5b_0RwrdBqyePXjNhCvjjOIMVB-CaONSgXRm9saRy60vN8uci3TIKDxGkhtaZ_CykIuFUHi_xRVeNfbYLgJhnkE-kdIDkhqC_hzUQAAAABHP54rAA"
+    UPSTREAM_REPO = "https://github.com/aryanchy4499/mtl1"
+    UPSTREAM_BRANCH = "main"
+    bot_token = "6971816913:AAFgKcG8exeztK9ap-V8_liTWZwhj08vpdA"
+    owner_id = 1596559467
     #DEVS or #OWNERS
-    sudo_users = [1596559467, 7172796863, 6274275394, 1195351595, -1002233833025, -1002205027579, 5518437348, 1996570767, 6651534688, 7011929837]
-    session = "Edodrivebot"
+    sudo_users = [1596559467, -1002230874428, -1002233833025, 1996570767]
+    session = "maheshforwardbot"
+    max_file_size = 200000000  # 2GB
+    video_width = 1280
+    video_height = 720
+    bot_creater = "IDK"  # Don't Remove if you Respect the DEV
 
-    bot_creater = "SNEHITHA"  # Don't Remove if you Respect the DEV
-
-    bot_creater_id = "@maheshsirop"  # Don't Remove if you Respect the DEV
+    bot_creater_id = "@OFFICIALCREATER"  # Don't Remove if you Respect the DEV
 
 
 class UPLOAD_CONGIF:
     upload_to = "tg" #tg, ftp, gdrive
     default_upload_to = "tg"
+
+
+class ScaryGhost(object):
+
+    owner = "1996570767"
+
+    log_channel = "-1001946386363"
 
 
 class GDRIVE_CONFIG:
@@ -82,12 +98,12 @@ class FILENAME_CONFIG:
     language_order = ['hi', 'ta', 'te', 'bn', 'gu', 'pa', 'as', 'or',
                     'ml', 'mr', 'kn', 'th', 'ja', 'th', 'id', 'ms', 'ko', 'bho', 'bh', 'en']
 
-    default_group_tag = "SNEHITHA" # Don't change it if you Respect the DEV
+    default_group_tag = "Team Auspicious" # Don't change it if you Respect the DEV
 
     #Dict made to add Group Tag according to the user requesting to DL (according to there TG ID) if not in list then takes the default_group_tag
     group_tag_mapping = {
-        '7172796863': 'SNEHITHA',
-        '1596559467': 'SNEHITHA'
+        '7172796863': 'Team Auspicious',
+        '1596559467' : 'Team Auspicious'
     }
 
 
