@@ -20,6 +20,23 @@ app = Client(
     sleep_threshold=30
 )
 
+
+try:
+    if not TG_CONFIG.stringhi:
+        raise KeyError("USER_SESSION_STRING is not set")
+    LOGGER.info("Starting USER Session")
+    USERBOT = Client(
+        name="bot-user",
+        session_string=TG_CONFIG.stringhi,
+        no_updates=True,
+    )
+except KeyError as e:
+    USERBOT = None
+    LOGGER.warning(f"No User Session, Default Bot session will be used. Error: {e}")
+
+
+
+
 @app.on_message(filters.chat(TG_CONFIG.sudo_users) & filters.command('gdrive'))
 async def gdrive_helper(_, message):
     if len(message.text.split()) == 1:
