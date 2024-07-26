@@ -1,6 +1,6 @@
 import os
 import sys
-from pyrogram import filters, idle, Client
+from pyrogram import filters, idle, Client, enums
 from bot.config import TG_CONFIG
 from bot.config import token_file, client_secrets_json
 from bot.helpers.utils import find_auth_code
@@ -11,6 +11,25 @@ from pydrive2 import auth
 from bot.services.tplay.api import TPLAY_API
 from bot.helpers.utils import post_to_telegraph
 import datetime
+import logging
+#from pyrogram import Client
+#from bot.config import TG_CONFIG
+LOG_FILE = 'log.txt'
+#USER_SESSION_STRING_KEY = 'tringhi'
+
+# Set up logging
+logging.basicConfig(
+    format="[%(asctime)s] [%(levelname)s] - %(message)s",
+    datefmt="%d-%b-%y %I:%M:%S %p",
+    level=logging.INFO,
+    handlers=[logging.FileHandler(LOG_FILE), logging.StreamHandler()]
+)
+
+# Set logging level for pyrogram
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+
+LOGGER = logging.getLogger(__name__)
+
 
 app = Client(
     TG_CONFIG.session,
